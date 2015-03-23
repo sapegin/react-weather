@@ -19,7 +19,8 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "build": "NODE_ENV=production gulp"
+    "build": "NODE_ENV=production gulp",
+    "server": "gulp devel"
   },
   "author": "Artem Sapegin",
   "license": "MIT"
