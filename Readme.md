@@ -2,16 +2,20 @@
 
 My [coding assignment](https://gist.github.com/TimBeyer/2565bd2b085fdb38000f) for [Delivery Hero](http://www.deliveryhero.com/).
 
+Try the [deployed app](http://sapegin.github.io/react-weather/) or read below hot to run it locally.
 
-## How to run
 
-First install dependencies:
+## How to run locally
+
+First checkout the repository (`$ git clone https://github.com/sapegin/react-weather.git`) or download it as a [ZIP file](https://github.com/sapegin/react-weather/archive/master.zip).
+
+Then install dependencies:
 
 ```
 $ npm install
 ```
 
-Then run development server:
+And run development server:
 
 ```
 $ npm run server

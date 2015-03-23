@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var gulpIf = require('gulp-if');
 var webpack = require('gulp-webpack');
 var stylus = require('gulp-stylus');
+var copy = require('gulp-copy');
+var ghPages = require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var stylobuild = require('stylobuild');
 var reload = browserSync.reload;
@@ -53,5 +55,20 @@ gulp.task('watch', function() {
 	gulp.watch(['styles/**/*.styl'], ['styles']);
 });
 
+gulp.task('make-dist', function() {
+	return gulp.src([
+			'build/**/*',
+			'icons/*.svg',
+			'index.html'
+		])
+		.pipe(copy('dist'));
+});
+
+gulp.task('gh-deploy', function() {
+	return gulp.src('dist/**/*')
+		.pipe(ghPages());
+});
+
 gulp.task('default', ['webpack', 'styles']);
 gulp.task('devel', ['webpack', 'styles', 'watch']);
+gulp.task('deploy', ['webpack', 'styles', 'make-dist', 'gh-deploy']);
