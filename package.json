@@ -1,0 +1,26 @@
+{
+  "name": "deliveryhero-test",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "~4.7.16",
+    "babel-loader": "~4.2.0",
+    "bower": "~1.3.12",
+    "bower-webpack-plugin": "~0.1.6",
+    "browser-sync": "~2.3.1",
+    "eslint": "~0.17.1",
+    "eslint-loader": "~0.7.0",
+    "gulp": "~3.8.11",
+    "gulp-if": "~1.2.5",
+    "gulp-stylus": "~2.0.1",
+    "gulp-webpack": "~1.3.0",
+    "stylobuild": "~0.7.0",
+    "webpack": "~1.7.3"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "build": "NODE_ENV=production gulp"
+  },
+  "author": "Artem Sapegin",
+  "license": "MIT"
+}
