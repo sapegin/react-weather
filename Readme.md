@@ -1,6 +1,6 @@
 # React Weather App
 
-[![Build Status](https://travis-ci.org/sapegin/deliveryhero-test.svg)](https://travis-ci.org/sapegin/deliveryhero-test)
+[![Build Status](https://travis-ci.org/sapegin/react-weather.svg)](https://travis-ci.org/sapegin/react-weather)
 
 My [coding assignment](https://gist.github.com/TimBeyer/2565bd2b085fdb38000f) for [Delivery Hero](http://www.deliveryhero.com/).
 
