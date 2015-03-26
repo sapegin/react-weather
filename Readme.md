@@ -1,5 +1,7 @@
 # React Weather App
 
+[![Build Status](https://travis-ci.org/sapegin/deliveryhero-test.svg)](https://travis-ci.org/sapegin/deliveryhero-test)
+
 My [coding assignment](https://gist.github.com/TimBeyer/2565bd2b085fdb38000f) for [Delivery Hero](http://www.deliveryhero.com/).
 
 Try the [deployed app](http://sapegin.github.io/react-weather/) or read below hot to run it locally.

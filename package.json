@@ -22,6 +22,7 @@
   },
   "scripts": {
     "postinstall": "bower install",
+    "test": "gulp",
     "build": "NODE_ENV=production gulp",
     "server": "gulp watch"
   },
