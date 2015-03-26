@@ -23,7 +23,7 @@
   "scripts": {
     "postinstall": "bower install",
     "build": "NODE_ENV=production gulp",
-    "server": "gulp devel"
+    "server": "gulp watch"
   },
   "author": "Artem Sapegin",
   "license": "MIT"

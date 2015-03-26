@@ -86,7 +86,7 @@ gulp.task('styles', function() {
 	.pipe(reload({stream: true}));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch',  ['webpack', 'styles'], function() {
 	isWatch = true;
 	if (isDevelopment) {
 		browserSync({
@@ -114,5 +114,4 @@ gulp.task('gh-deploy', function() {
 });
 
 gulp.task('default', ['webpack', 'styles']);
-gulp.task('devel', ['webpack', 'styles', 'watch']);
 gulp.task('deploy', ['webpack', 'styles', 'make-dist', 'gh-deploy']);
