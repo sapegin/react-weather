@@ -39,7 +39,7 @@ export default React.createClass({
 	_getNameByValue: function(needleValue) {
 		let items = this.props.items;
 		for (let name in items) {
-			var value = items[name];
+			let value = items[name];
 			if (String(value) === String(needleValue)) {
 				return name;
 			}

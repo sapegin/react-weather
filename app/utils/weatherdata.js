@@ -2,7 +2,7 @@
 
 'use strict';
 
-import _fetch from 'fetch';
+import 'fetch';
 
 const UNICODE_MINUS = '\u2212';
 const RETRY_INTERVAL = 5000;
@@ -25,8 +25,8 @@ class WeatherData {
 	}
 
 	unsubscribe(name) {
-		var cityId = this._getIdByName(name);
-		var city = this._getCityById(cityId);
+		let cityId = this._getIdByName(name);
+		let city = this._getCityById(cityId);
 		if (city.timer) {
 			clearTimeout(city.timer);
 		}
