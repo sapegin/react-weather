@@ -6,6 +6,7 @@ import 'fetch';
 
 const UNICODE_MINUS = '\u2212';
 const RETRY_INTERVAL = 5000;
+const APPID = 'b1b15e88fa797225412429c1c50c122a';
 
 class WeatherData {
 	constructor() {
@@ -71,7 +72,7 @@ class WeatherData {
 
 	_getApiUrl(name) {
 		name = encodeURIComponent(name);
-		return `http://api.openweathermap.org/data/2.5/weather?units=metric&q=${name}`;
+		return `http://api.openweathermap.org/data/2.5/weather?units=metric&q=${name}&appid=${APPID}`;
 	}
 
 	_parseResponse(json) {
